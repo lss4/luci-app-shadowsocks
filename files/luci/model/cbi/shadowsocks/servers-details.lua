@@ -58,6 +58,10 @@ o = s:option(Value, "server_port", translate("Server Port"))
 o.datatype = "port"
 o.rmempty = false
 
+o = s:option(Value, "local_port", translate("Local Port"))
+o.datatype = "port"
+o.rmempty = false
+
 o = s:option(Value, "timeout", translate("Connection Timeout"))
 o.datatype = "uinteger"
 o.default = 60

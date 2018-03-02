@@ -9,7 +9,6 @@ config transparent_proxy
 
 config socks5_proxy
 	list server 'nil'
-	option local_port '1080'
 
 config port_forward
 	list server 'nil'
@@ -22,6 +21,7 @@ config servers
 	option no_delay '0'
 	option server '127.0.0.1'
 	option server_port '8388'
+	option local_port '1080'
 	option timeout '60'
 	option password 'barfoo!'
 	option encrypt_method 'rc4-md5'

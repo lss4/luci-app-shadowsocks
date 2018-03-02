@@ -122,11 +122,6 @@ if has_local then
 	o.default = "nil"
 	o.rmempty = false
 
-	o = s:option(Value, "local_port", translate("Local Port"))
-	o.datatype = "port"
-	o.default = 1080
-	o.rmempty = false
-
 	o = s:option(Value, "mtu", translate("Override MTU"))
 	o.datatype = "range(296,9200)"
 	o.default = 1492

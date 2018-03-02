@@ -36,6 +36,11 @@ function o.cfgvalue(...)
 	return Value.cfgvalue(...) or "?"
 end
 
+o = s:option(DummyValue, "local_port", translate("Local Port"))
+function o.cfgvalue(...)
+	return Value.cfgvalue(...) or "?"
+end
+
 o = s:option(DummyValue, "encrypt_method", translate("Encrypt Method"))
 function o.cfgvalue(...)
 	local v = Value.cfgvalue(...)
